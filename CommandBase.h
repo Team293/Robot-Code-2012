@@ -1,9 +1,7 @@
 #ifndef COMMAND_BASE_H
 #define COMMAND_BASE_H
 
-// LOLOOLOLOLOLOLOLOLOLOLOLOLOLOOLOLOLOLOLOL
-// sjjjjjjjjjjjjjjjjjjjjfjdsfkjsdlkfjsdlkfsdklfja
-// meep meep
+
 
 #include "Commands/Command.h"
 #include "OI.h"
