@@ -2,10 +2,17 @@
 #define COMMAND_BASE_H
 
 
-
 #include "Commands/Command.h"
 #include "OI.h"
+
+#include "Subsystems/Collar.h"
+#include "Subsystems/Collector.h"
 #include "Subsystems/Drivetrain.h"
+#include "Subsystems/Passer.h"
+#include "Subsystems/Puncher.h"
+#include "Subsystems/Turret.h"
+#include "Subsystems/Vision.h"
+
 
 
 /**
@@ -20,7 +27,15 @@ public:
 	static void init();
 	// Create a single static instance of all of your subsystems
 	static OI *oi;
+	
+	static Collar *collar;
+	static Collector *collector;
 	static Drivetrain *drivetrain;
+	static Passer *passer;
+	static Puncher *puncher;
+	static Turret *turret;
+	static Vision *vision;
+	
 };
 
 #endif

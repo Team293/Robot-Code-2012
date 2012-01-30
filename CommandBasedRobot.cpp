@@ -2,10 +2,11 @@
 #include "Commands/Command.h"
 #include "CommandBase.h"
 #include "Commands/JoystickDrive.h"
+#include "Commands/StartPasser.h"
+#include "Commands/StopPasser.h"
 
 class CommandBasedRobot : public IterativeRobot {
 private:
-	Command *DriveCommand;
 	
 	virtual void RobotInit() {
 		CommandBase::init();
