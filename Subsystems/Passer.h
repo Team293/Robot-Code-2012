@@ -3,17 +3,15 @@
 #include "Commands/Subsystem.h"
 #include "WPILib.h"
 
-/**
- *
- *
- * @author Administrator
- */
+// Does not work yet 
+// 1/30/12 I.G.
+
 class Passer: public Subsystem {
 public:
 	Passer();
 	void InitDefaultCommand();
-	void StartPasserMotor();
-	void StopPasserMotor();
+	void PasserMotorStart();
+	void PasserMotorStop();
 
 private:
 	SpeedController *leftmotor;

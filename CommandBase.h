@@ -6,7 +6,7 @@
 #include "OI.h"
 
 #include "Subsystems/Collar.h"
-#include "Subsystems/Collector.h"
+#include "Subsystems/Conveyor.h"
 #include "Subsystems/Drivetrain.h"
 #include "Subsystems/Passer.h"
 #include "Subsystems/Puncher.h"
@@ -27,9 +27,8 @@ public:
 	static void init();
 	// Create a single static instance of all of your subsystems
 	static OI *oi;
-	
 	static Collar *collar;
-	static Collector *collector;
+	static Conveyor *conveyor;
 	static Drivetrain *drivetrain;
 	static Passer *passer;
 	static Puncher *puncher;

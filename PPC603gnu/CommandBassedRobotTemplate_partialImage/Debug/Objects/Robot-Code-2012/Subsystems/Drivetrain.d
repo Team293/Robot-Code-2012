@@ -317,21 +317,21 @@
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Vision/ColorImage.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPIErrors.h \
   C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Robotmap.h \
-  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/JoystickDrive.h \
-  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../CommandBase.h \
+  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/JoystickDrive.h \
+  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../CommandBase.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Command.h \
-  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../OI.h \
+  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../OI.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h \
-  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Collar.h \
+  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Collar.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/PIDSubsystem.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h \
-  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Collector.h \
+  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Conveyor.h \
   C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h \
-  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Drivetrain.h \
-  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Passer.h \
-  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Puncher.h \
-  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Turret.h \
-  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Vision.h
+  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Drivetrain.h \
+  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Passer.h \
+  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Puncher.h \
+  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Turret.h \
+  C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Vision.h
 
 C:/Robot-Code-2012/Robot-Code-2012/Subsystems/Drivetrain.h:
 
@@ -965,32 +965,32 @@ C:/WindRiver/vxworks-6.3/target/h/WPILib/WPIErrors.h:
 
 C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Robotmap.h:
 
-C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/JoystickDrive.h:
+C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/JoystickDrive.h:
 
-C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../CommandBase.h:
+C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../CommandBase.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Command.h:
 
-C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../OI.h:
+C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../OI.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h:
 
-C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Collar.h:
+C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Collar.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/PIDSubsystem.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/WPILib.h:
 
-C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Collector.h:
+C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Conveyor.h:
 
 C:/WindRiver/vxworks-6.3/target/h/WPILib/Commands/Subsystem.h:
 
-C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Drivetrain.h:
+C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Drivetrain.h:
 
-C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Passer.h:
+C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Passer.h:
 
-C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Puncher.h:
+C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Puncher.h:
 
-C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Turret.h:
+C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Turret.h:
 
-C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/../Subsystems/Vision.h:
+C:/Robot-Code-2012/Robot-Code-2012/Subsystems/../Commands/DriveTrain/../../Subsystems/Vision.h:

@@ -1,6 +1,7 @@
 #include "Passer.h"
 #include "../Robotmap.h"
-#include "../Commands/StopPasser.h"
+#include "../Commands/Passer/PasserStop.h"
+#include "../Commands/Passer/PasserStart.h"
 
 // Does not work yet 
 // 1/30/12 I.G.
@@ -11,15 +12,15 @@ Passer::Passer() : Subsystem("Passer") {
 }
     
 void Passer::InitDefaultCommand() {
-	SetDefaultCommand(new StopPasser());
+	SetDefaultCommand(new PasserStop());
 }
 
-void Passer::StartPasserMotor() {
+void Passer::PasserMotorStart() {
 	leftmotor->Set(0.1);
 	rightmotor->Set(-0.1);
 }
 
-void Passer::StopPasserMotor() {
+void Passer::PasserMotorStop() {
 	leftmotor->Set(0.0);
 	rightmotor->Set(0.0);
 }

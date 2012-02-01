@@ -1,6 +1,6 @@
 #include "Drivetrain.h"
 #include "../Robotmap.h"
-#include "../Commands/JoystickDrive.h"
+#include "../Commands/DriveTrain/JoystickDrive.h"
 
 Drivetrain::Drivetrain() : Subsystem("Drivetrain") {
 	drive = new RobotDrive(LEFT_DRIVE,RIGHT_DRIVE); //2 for left port, 3 for right

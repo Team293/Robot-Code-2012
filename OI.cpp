@@ -1,8 +1,9 @@
 #include "OI.h"
 #include "Robotmap.h"
 
-#include "Commands/StartPasser.h"
-#include "Commands/StopPasser.h"
+#include "Commands/DriveTrain/JoystickDrive.h"
+#include "Commands/Passer/PasserStart.h"
+#include "Commands/Passer/PasserStop.h"
 
 OI::OI() {
 	// Process operator interface input here.
@@ -12,8 +13,8 @@ OI::OI() {
 	startpasserbutton = new JoystickButton(lstick,3);	
 	stoppasserbutton = new JoystickButton(lstick,2);
 	
-	startpasserbutton->WhenPressed(new StartPasser());
-	stoppasserbutton->WhenPressed(new StopPasser());
+	startpasserbutton->WhenPressed(new PasserStart());
+	stoppasserbutton->WhenPressed(new PasserStop());
 }
 
 double OI::getLeftJoystick() {
