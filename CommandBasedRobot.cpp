@@ -4,14 +4,12 @@
 #include "Commands/DriveTrain/JoystickDrive.h"
 #include "Commands/Passer/PasserStart.h"
 #include "Commands/Passer/PasserStop.h"
+
 class CommandBasedRobot : public IterativeRobot {
-private:
 	
-	virtual void RobotInit() {
+private:
+	virtual void RobotInit() {	
 		CommandBase::init();
-		SmartDashboard *sd = SmartDashboard::GetInstance();
-		sd->PutData(Scheduler::GetInstance());
-		
 	}
 	
 	virtual void AutonomousInit() {
@@ -21,11 +19,12 @@ private:
 	}
 	
 	virtual void TeleopInit() {
+		
+	}
+	virtual void TeleopPeriodic() {
+		Scheduler::GetInstance()->Run();		
 	}
 	
-	virtual void TeleopPeriodic() {
-		Scheduler::GetInstance()->Run();
-	}
 };
 
 START_ROBOT_CLASS(CommandBasedRobot);

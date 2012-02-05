@@ -186,6 +186,10 @@ CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Comm
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
 
+CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/RunBallCollector.o : $(PRJ_ROOT_DIR)/Commands/Conveyor/RunBallCollector.cpp $(FORCE_FILE_BUILD)
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
+
+
 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/TopConveyorStart.o : $(PRJ_ROOT_DIR)/Commands/Conveyor/TopConveyorStart.cpp $(FORCE_FILE_BUILD)
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall  -MD -MP -mlongcall $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL   $(DEFINES) -o "$@" -c "$<"
 
@@ -244,6 +248,7 @@ OBJECTS_CommandBassedRobotTemplate_partialImage = CommandBassedRobotTemplate_par
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/BothConveyorsStop.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/BottomConveyorStart.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/BottomConveyorStop.o \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/RunBallCollector.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/TopConveyorStart.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/TopConveyorStop.o \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/DriveTrain/JoystickDrive.o \
@@ -272,11 +277,11 @@ force :
 
 DEP_FILES := CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/CommandBase.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/CommandBasedRobot.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/BothConveyorsStart.d \
 	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/BothConveyorsStop.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/BottomConveyorStart.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/BottomConveyorStop.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/TopConveyorStart.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/TopConveyorStop.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/DriveTrain/JoystickDrive.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Passer/PasserStart.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Passer/PasserStop.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/OI.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Collar.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Conveyor.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Drivetrain.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Passer.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Puncher.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Turret.d \
-	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Vision.d
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/RunBallCollector.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/TopConveyorStart.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Conveyor/TopConveyorStop.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/DriveTrain/JoystickDrive.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Passer/PasserStart.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Commands/Passer/PasserStop.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/OI.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Collar.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Conveyor.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Drivetrain.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Passer.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Puncher.d \
+	 CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Turret.d CommandBassedRobotTemplate_partialImage/$(MODE_DIR)/Objects/Robot-Code-2012/Subsystems/Vision.d
 -include $(DEP_FILES)
 
 

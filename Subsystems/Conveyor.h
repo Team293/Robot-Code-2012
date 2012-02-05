@@ -13,13 +13,25 @@ public:
 	Conveyor();
 	void InitDefaultCommand();
 	void BothMotorsStart();
+	void BothMotorsStop();
 	void TopConveyorMotorStart();
 	void TopConveyorMotorStop();
 	void BottomConveyorMotorStart();
 	void BottomConveyorMotorStop();
-	
+	void ConveyorStateMachine();
+
 	SpeedController *topmotor;
 	SpeedController *bottommotor;
+	
+	DigitalInput *bottomsensor;
+	DigitalInput *topsensor;
+	DigitalInput *shootersensor;
+	
+	int ballcount;
+	
+	bool shooterState;
+	bool topState;
+	bool bottomState;
 };
 
 #endif

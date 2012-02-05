@@ -21,6 +21,8 @@ void _GLOBAL__I__ZN13JoystickDriveC2Ev();
 
 void _GLOBAL__I__ZN15TopConveyorStopC2Ev();
 
+void _GLOBAL__I__ZN16RunBallCollectorC2Ev();
+
 void _GLOBAL__I__ZN16TopConveyorStartC2Ev();
 
 void _GLOBAL__I__ZN17BothConveyorsStopC2Ev();
@@ -73,6 +75,7 @@ void (*_ctors[])() =
     _GLOBAL__I__ZN11PasserStartC2Ev,
     _GLOBAL__I__ZN13JoystickDriveC2Ev,
     _GLOBAL__I__ZN15TopConveyorStopC2Ev,
+    _GLOBAL__I__ZN16RunBallCollectorC2Ev,
     _GLOBAL__I__ZN16TopConveyorStartC2Ev,
     _GLOBAL__I__ZN17BothConveyorsStopC2Ev,
     _GLOBAL__I__ZN18BothConveyorsStartC2Ev,
@@ -110,6 +113,8 @@ void _GLOBAL__D__ZN11PasserStartC2Ev();
 void _GLOBAL__D__ZN13JoystickDriveC2Ev();
 
 void _GLOBAL__D__ZN15TopConveyorStopC2Ev();
+
+void _GLOBAL__D__ZN16RunBallCollectorC2Ev();
 
 void _GLOBAL__D__ZN16TopConveyorStartC2Ev();
 
@@ -159,6 +164,7 @@ void (*_dtors[])() =
     _GLOBAL__D__ZN11PasserStartC2Ev,
     _GLOBAL__D__ZN13JoystickDriveC2Ev,
     _GLOBAL__D__ZN15TopConveyorStopC2Ev,
+    _GLOBAL__D__ZN16RunBallCollectorC2Ev,
     _GLOBAL__D__ZN16TopConveyorStartC2Ev,
     _GLOBAL__D__ZN17BothConveyorsStopC2Ev,
     _GLOBAL__D__ZN18BothConveyorsStartC2Ev,

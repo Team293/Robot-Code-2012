@@ -13,7 +13,7 @@
 #include "Subsystems/Turret.h"
 #include "Subsystems/Vision.h"
 
-
+//#include "SmartDashboard/SmartDashboard.h"
 
 /**
  * The base for all commands. All atomic commands should subclass CommandBase.
@@ -27,6 +27,8 @@ public:
 	static void init();
 	// Create a single static instance of all of your subsystems
 	static OI *oi;
+	static SmartDashboard *dashboard;
+	
 	static Collar *collar;
 	static Conveyor *conveyor;
 	static Drivetrain *drivetrain;
@@ -34,6 +36,7 @@ public:
 	static Puncher *puncher;
 	static Turret *turret;
 	static Vision *vision;
+	
 	
 };
 

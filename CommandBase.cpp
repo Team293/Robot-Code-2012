@@ -9,6 +9,9 @@
 #include "Subsystems/Turret.h"
 #include "Subsystems/Vision.h"
 
+//#include "WPILib.h"
+//#include "SmartDashboard/SmartDashboard.h"
+
 CommandBase::CommandBase(const char *name) : Command(name) {
 }
 
@@ -39,5 +42,8 @@ void CommandBase::init() {
 	passer = new Passer();
 	puncher = new Puncher();
 	turret = new Turret();
-	vision = new Vision();
+	vision = new Vision();	
+	
+	dashboard = SmartDashboard::GetInstance();
+	dashboard->PutData(drivetrain);
 }
