@@ -1,28 +1,36 @@
 #ifndef ROBOTMAP_H
 #define ROBOTMAP_H
 
-//
+//Joysticks
 static const int LEFT_JOYSTICK_PORT = 1;
 static const int RIGHT_JOYSTICK_PORT = 2;
 
 
-static const int LEFT_DRIVE = 2;
-static const int RIGHT_DRIVE = 3; 
-/**
- * The RobotMap is a mapping from the ports sensors and actuators are wired into
- * to a variable name. This provides flexibility changing wiring, makes checking
- * the wiring easier and significantly reduces the number of magic numbers
- * floating around.
- */
- 
-// For example to map the left and right motors, you could define the
-// following variables to use with your drivetrain subsystem.
-// #define LEFTMOTOR 1
-// #define RIGHTMOTOR 2
+//PWMs
+static const int LEFT_DRIVE = 1;
+static const int RIGHT_DRIVE = 2; 
 
-// If you are using multiple modules, make sure to define both the port
-// number and the module. For example you with a rangefinder:
-// #define RANGE_FINDER_PORT 1
-// #define RANGE_FINDER_MODULE 1
+static const int LEFT_PASSER_MOTOR = 3;
+static const int RIGHT_PASSER_MOTOR = 4;
+
+static const int TOP_CONVEYOR_MOTOR = 5;
+static const int BOTTOM_CONVEYOR_MOTOR = 6;
+
+//DIOs
+static const int BOTTOM_SENSOR = 1;
+static const int TOP_SENSOR = 2;
+static const int SHOOTER_SENSOR = 3;
+
+//Conveyor constants
+static const int MAX_BALLS = 3;
+
+static const int BOTTOM_CONVEYOR_EMPTY_STATE = 0;
+static const int BOTTOM_CONVEYOR_FULL_STATE = 1;
+
+static const int TOP_CONVEYOR_EMPTY_STATE = 0;
+static const int TOP_CONVEYOR_FULL_STATE = 1;
+
+static const int SHOOTER_EMPTY_STATE = 0;
+static const int SHOOTER_FULL_STATE = 1;
 
 #endif

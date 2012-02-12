@@ -8,7 +8,10 @@ private:
 	
 	Joystick *lstick;
 	Joystick *rstick;
-
+	
+	Button * startpasserbutton;
+	Button * stoppasserbutton;
+	
 public:
 	OI();
 	double getLeftJoystick();
